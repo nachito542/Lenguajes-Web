@@ -1,0 +1,33 @@
+body {
+    font-family: 'Courier New', sans-serif;
+    background-color: #3298f2;
+    padding: 0;
+   height: 300vh;
+}
+.parte1{
+    background-color: #73f7a5;
+    padding: 2%;
+    border-radius: 55px;
+    box-shadow: 0 0 15px rgba(177, 177, 177, 0.8);
+    max-width: 400px;
+    width: 40%;
+}
+h1 {
+    text-align: justify;
+    color: #060505;
+    margin-bottom: 20px;
+}
+.componente{
+    font-family: 'arial', sans-serif;
+    box-shadow: 0 0 15px rgba(2, 59, 130, 0.752);
+    color: #240606;
+    margin: 10;
+    padding: 0;
+    margin-left: 20px;
+}
+p{
+     color: #fbfbfb;
+    margin: 0;
+    padding: 0;
+     margin-left: 30px;
+}
