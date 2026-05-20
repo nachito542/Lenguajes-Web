@@ -7,9 +7,9 @@ body {
 .parte1{
     background-color: #73f7a5;
     padding: 2%;
-    border-radius: 55px;
-    box-shadow: 0 0 15px rgba(177, 177, 177, 0.8);
-    max-width: 400px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(177, 177, 177, 0.8);
+    max-width: 350px;
     width: 40%;
 }
 h1 {
@@ -19,11 +19,13 @@ h1 {
 }
 .componente{
     font-family: 'arial', sans-serif;
-    box-shadow: 0 0 15px rgba(2, 59, 130, 0.752);
+    background-color: #4296f1;
+    box-shadow: 0 0 20px rgba(9, 58, 119, 0.752);
     color: #240606;
     margin: 10;
     padding: 0;
     margin-left: 20px;
+    width: 20%;
 }
 p{
      color: #000000;
