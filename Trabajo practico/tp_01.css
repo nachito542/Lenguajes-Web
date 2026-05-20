@@ -29,11 +29,40 @@ h1 {
 }
 p{
      color: #000000;
-    margin: 0;
+    margin: 10;
     padding: 0;
      margin-left: 30px;
 }
 button{
     border: none;
     background: transparent;
+}
+.tira-container{
+    width: 100%;
+    overflow: hidden;
+    height: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tira{
+    height: 120px;
+    width: 300%;
+
+    background: url("tira_arduino.jpg") repeat-x;
+    background-size: contain;
+
+    filter: brightness(2.5);
+
+    animation: mover 8s linear infinite;
+}
+
+@keyframes mover{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-33.33%);
+    }
 }
