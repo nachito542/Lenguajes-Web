@@ -1,6 +1,6 @@
 body {
     font-family: 'Courier New', sans-serif;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     padding: 0;
    height: 300vh;
 }
@@ -52,7 +52,7 @@ button{
     background: url("tira_arduino.jpg") repeat-x;
     background-size: contain;
 
-    filter: brightness(2.5);
+    filter: brightness(1.1);
 
     animation: mover 8s linear infinite;
 }

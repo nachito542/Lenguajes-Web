@@ -2,91 +2,102 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Proyectos de Robotica</title>
-    <link rel="stylesheet" href="proyectos_robotica.css">
+    <title>Proyectos con Arduino</title>
+    <link rel="stylesheet" href="tp_01.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .volver {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0071bc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .seccion-proyecto {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0071bc;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .tarjeta-idea {
+            background: #f4f6f9;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #0071bc;
+            border-radius: 0 5px 5px 0;
+        }
+        .componentes-lista {
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+        }
+        .badge {
+            background: #e1e8ed;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="https://www.clipartmax.com/png/middle/100-1008674_intro-arduino-logo-arduino-logo-png.png"width="100" height="100">
 </head>
-
 <body>
 
-<h1>🤖 Proyectos de Robotica</h1>
+    <a href="Tp_01.html" class="volver">← Volver al Inicio</a>
 
-<div class="tira-container">
-    <div class="tira"></div>
-</div>
+    <h1>Guía de Proyectos Sugeridos</h1>
+    <p>Ideas prácticas que podés construir combinando los componentes de nuestra lista.</p>
 
+    <div class="seccion-proyecto">
+        <h2>🤖 Proyectos de Robótica y Automatización</h2>
+        
+        <div class="tarjeta-idea">
+            <h3>1. Alarma Lumínica con Pulsador</h3>
+            <p>Un proyecto ideal para arrancar: al presionar el pulsador, el LED se enciende automáticamente para alertar una acción.</p>
+            <p class="componentes-lista">🛠️ <strong>Componentes:</strong> <span class="badge">Arduino Uno</span> o <span class="badge">Nano</span> + <span class="badge">Led</span> + <span class="badge">Pulsador</span>.</p>
+        </div>
 
-<h2 class="parte1">Robot Araña</h2>
+        <div class="tarjeta-idea">
+            <h3>2. Regulador de Brillo Manual</h3>
+            <p>Controlá la intensidad de la luz de un LED girando la perilla del potenciómetro de forma precisa.</p>
+            <p class="componentes-lista">🛠️ <strong>Componentes:</strong> <span class="badge">Arduino Uno</span> + <span class="badge">Led</span> + <span class="badge">Potenciometro</span>.</p>
+        </div>
 
-<p>
-Proyecto de robot cuadrúpedo utilizando ESP32, servos MG946R y sensores.
-</p>
+        <div class="tarjeta-idea">
+            <h3>3. Reproductor de Sonidos Automatizado</h3>
+            <p>Elegí y reproducí pistas de audio de tu tarjeta MicroSD usando pulsadores como botones de play y stop.</p>
+            <p class="componentes-lista">🛠️ <strong>Componentes:</strong> <span class="badge">Arduino Mega</span> o <span class="badge">Uno</span> + <span class="badge">Dflayer mini</span> + <span class="badge">Pulsador</span>.</p>
+        </div>
+    </div>
 
-<div style="margin-left: 500px;">
-<img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=1200&auto=format&fit=crop" width="450">
-</div>
+    <div class="seccion-proyecto">
+        <h2>🌐 Proyectos de IoT y Conectividad</h2>
 
+        <div class="tarjeta-idea">
+            <h3>1. Monitoreo de Plantas Inteligente (IoT)</h3>
+            <p>Medí la humedad de la tierra y mandá los datos a tu celular por Wi-Fi para saber cuándo regar.</p>
+            <p class="componentes-lista">🛠️ <strong>Componentes:</strong> <span class="badge">ESP32</span> + <span class="badge">Sensor de humedad del suelo</span>.</p>
+        </div>
 
-<h3 class="componente"><button>ESP32</button></h3>
-
-<p>
-Controla el movimiento del robot y la conexión WiFi.
-</p>
-
-
-<h3 class="componente"><button>Servomotores</button></h3>
-
-<p>
-Permiten mover las patas del robot.
-</p>
-
-
-<h3 class="componente"><button>Sensor de Humedad</button></h3>
-
-<p>
-Puede detectar terrenos húmedos o agua.
-</p>
-
-
-<h3 class="componente"><button>DFPlayer Mini</button></h3>
-
-<p>
-Reproduce sonidos o efectos del robot.
-</p>
-
-
-<hr class="linea-arduino">
-
-
-<h2 class="parte1">Brazo Robotico</h2>
-
-<p>
-Brazo automatizado controlado por Arduino Mega.
-</p>
-
-<div style="margin-left: 500px;">
-<img src="https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?q=80&w=1200&auto=format&fit=crop" width="450">
-</div>
-
-
-<h3 class="componente"><button>Arduino Mega</button></h3>
-
-<p>
-Controla múltiples servos y sensores.
-</p>
-
-
-<h3 class="componente"><button>Potenciometro</button></h3>
-
-<p>
-Permite controlar manualmente las articulaciones.
-</p>
-
-
-<h3 class="componente"><button>Pulsador</button></h3>
-
-<p>
-Activa movimientos automáticos.
-</p>
+        <div class="tarjeta-idea">
+            <h3>2. Estación de Tickets Térmicos</h3>
+            <p>Creá un turnero que imprima un papel con la fecha y hora cada vez que alguien toque el pulsador.</p>
+            <p class="componentes-lista">🛠️ <strong>Componentes:</strong> <span class="badge">Arduino Uno</span> o <span class="badge">ESP32</span> + <span class="badge">Impresora termica</span> + <span class="badge">Pulsador</span>.</p>
+        </div>
+    </div>
 
 </body>
 </html>
