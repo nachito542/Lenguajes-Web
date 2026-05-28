@@ -1,42 +1,104 @@
-body {
-    font-family: 'Courier New', sans-serif;
-    background-color: #f9f9f9;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom,#eef4ff,#dbe9ff);
+    margin: 0;
     padding: 0;
-   height: 300vh;
 }
+
+/* TITULO PRINCIPAL */
+
+h1{
+    background: linear-gradient(135deg,#00979D,#004f52);
+    color: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+    font-size: 45px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+}
+
+/* TITULOS DE SECCION */
+
 .parte1{
-    background-color: #73f7a5;
-    padding: 2%;
-    border-radius: 50px;
-    box-shadow: 0 0 5px rgba(177, 177, 177, 0.8);
-    max-width: 350px;
-    width: 40%;
+    background: linear-gradient(135deg,#73f7a5,#42d392);
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(177,177,177,0.8);
+    width: fit-content;
+    margin-left: 30px;
+    font-size: 32px;
+    color: #003c3f;
 }
-h1 {
-    text-align: justify;
-    color: #060505;
-    margin-bottom: 20px;
-}
+
+/* TARJETAS DE COMPONENTES */
+
 .componente{
-    font-family: 'arial', sans-serif;
-    background-color: #4296f1;
-    box-shadow: 0 0 20px rgba(9, 58, 119, 0.752);
-    color: #240606;
-    margin: 10;
-    padding: 0;
-    margin-left: 20px;
-    width: 20%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#3b82f6,#2563eb);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    color: white;
+    margin: 30px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    width: fit-content;
+    transition: 0.3s;
 }
-p{
-     color: #000000;
-    margin: 10;
-    padding: 0;
-     margin-left: 30px;
+
+.componente:hover{
+    transform: translateY(-5px);
 }
+
+/* BOTONES */
+
 button{
+    background: white;
+    color: #2563eb;
     border: none;
-    background: transparent;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+button:hover{
+    background: #dbeafe;
+    transform: translateY(-3px);
+}
+
+/* PARRAFOS */
+
+p{
+    background: white;
+    border-left: 8px solid #00979D;
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 1.7;
+    margin: 20px 40px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    color: #111;
+    font-size: 18px;
+}
+
+/* IMAGENES */
+
+img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+    transition: 0.4s;
+}
+
+img:hover{
+    transform: scale(1.03);
+}
+
+/* TIRA ANIMADA */
+
 .tira-container{
     width: 100%;
     overflow: hidden;
@@ -65,4 +127,52 @@ button{
     to{
         transform: translateX(-33.33%);
     }
+}
+
+/* CENTRAR IMAGENES */
+
+div[style*="margin-left"]{
+    margin-left: 0 !important;
+    display: flex;
+    justify-content: center;
+}
+
+/* PROYECTOS */
+
+.contenedor-proyectos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.tarjeta-proyecto{
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.tarjeta-proyecto:hover{
+    transform: translateY(-10px);
+}
+
+.btn-proyecto{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #00979D;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-proyecto:hover{
+    background: #005f63;
 }
