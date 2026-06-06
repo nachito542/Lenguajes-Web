@@ -1,105 +1,399 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Ayudante de modulos</title>
-     <link rel="stylesheet" href="tp_01.css">
-     <link rel="icon" type="image/png" href="https://www.clipartmax.com/png/middle/100-1008674_intro-arduino-logo-arduino-logo-png.png"width="100" height="100">
-    
-    <link rel="stylesheet" href="tp_01.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="tp_01.css">
+<title>Ayudante de módulos Arduino</title>
+
 </head>
-<body></body>
-    <div style="margin-left: 450px;">
-      <h1>Modulos de programacion de Arduino</h1>
-    </div>
-    <div class="tira-container">
-      <div class="tira"></div>
-    </div>
-        <h2 class="parte1">Modulos disponibles</h2> 
-        
-         <h3 class="componente"> <a href="https://arduino.cl/aprende/ejemplos/?srsltid=AfmBOooqWKHM2rRdkY6EFKyG5Gpfi560ehaZ2q9n7Ah7mVnkATyFv6E5" ><button>Arduino Uno</button></a></h3>
-           <p>Arduino Uno es una placa electrónica de hardware abierto basada en un microcontrolador (ATmega328P), utilizada para crear proyectos de electrónica, robótica y automatización. Funciona como un pequeño cerebro programable que permite conectar sensores (entradas) y activar actuadores como motores o luces (salidas).  </p>
-           <div style="margin-left: 500px;">
-           <a href="https://programarfacil.com/blog/arduino-blog/arduino-uno-r3/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE0UgAcbhj1GS7oh7iuUxUYNMfenpilZ6Vcg&s" alt="Arduino Uno" width="350" height="350"></a>
-           </div>
-           
-         <h3 class="componente"> <a  href="https://dfists.ua.es/~jpomares/arduino/page_14.htm"  ><button>Arduino Mega</button></a> </h3>
-           <p>El Arduino Mega 2560 es una placa de desarrollo basada en el microcontrolador ATmega2560, diseñada para proyectos complejos que requieren más recursos que un Arduino Uno, como impresoras 3D, robótica avanzada y domótica. Destaca por sus 54 pines digitales, 16 entradas analógicas, mayor memoria flash y 4 puertos UART. </p>
-          <div style="margin-left: 500px;">
-           <a href="https://programarfacil.com/blog/arduino-blog/arduino-mega-2560/" target="_blank"><img src="https://tecmikro.com/img/cms/mega-2560-r3-para-arduino-01_1.jpg" alt="Arduino Mega" width="600" height="350"></a>
-           </div>
 
-         <h3 class="componente"> <a href="https://r.search.yahoo.com/_ylt=AwrFSQt9LAZqJgIAxbOr9Qt.;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1779999101/RO=10/RU=https%3a%2f%2fes.newbiely.com%2ftutorials%2farduino-nano%2farduino-nano-code-structure/RK=2/RS=DtsdDT_11IPRqzB0cs_HjLTgFB8-" ><button>Arduino Nano</button></a></h3>
-           <p>Es una placa de desarrollo pequeña y económica basada en el microcontrolador \(ATmega328P\). Funciona como el "cerebro" de proyectos electrónicos y ofrece prácticamente las mismas funciones que el Arduino Uno, pero en un formato compacto ideal para placas de pruebas (protoboards). </p>
-           <div style="margin-left: 500px;">
-           <a href="https://programarfacil.com/blog/arduino-blog/familia-arduino-nano/" target="_blank"><img src="https://components101.com/sites/default/files/components/Arduino-Nano.jpg" alt="Arduino Nano" width="450" height="350"></a>
-        </div>
+<body>
 
-         <h3 class="componente"><a href="github.com/espressif/arduino-esp32/tree/master/libraries" ><button>ESP32</button></a></h3>
-           <p>El ESP32 es una familia de microcontroladores de bajo coste y consumo, con Wi-Fi y Bluetooth de doble modo integrados, desarrollados por Espressif Systems. Se utilizan comúnmente como placas de desarrollo para proyectos de Internet de las Cosas (IoT), automatización y robótica debido a su alta potencia de procesamiento. </p>
-           <div style="margin-left: 500px;">
-           <a href="https://programarfacil.com/domotica/esp32-comparativa/" target="_blank"><img src="https://programarfacil.com/wp-content/uploads/2022/03/esp32-web-foto_esp.jpg" alt="ESP32" width="400" height="450"></a>
-        </div>
+<!-- MENU -->
 
-         <h3 class="componente"><a href="https://dfists.ua.es/~jpomares/arduino/page_14.htm" ><button>Led</button></a> </h3>
-           <p>Componente semi conductor que transforman la corriente electrica en luz</p>
-           <div style="margin-left: 500px;">
-           <a href="https://visualled.com/glosario/que-es-un-led/" target="_blank"><img src="https://i0.wp.com/www.teslaelectronic.com.pe/wp-content/uploads/2018/12/Led.Blanco.jpg?fit=600%2C600&ssl=1" alt="Led" width="450" height="400"></a>
-        </div>
+<div class="menu">
 
-         <h3 class="componente"><a href="https://programarfacil.com/blog/utilizar-pulsadores-en-arduino/" ><button>Pulsador</button></a></h3>
-           <p>Es un interruptor electromecánico que permite o interrumpe el paso de corriente eléctrica solo mientras se mantiene presionado. Al dejar de ejercer fuerza sobre él, un resorte interno lo hace volver a su posición original, lo que lo diferencia de un interruptor convencional. </p>
-           <div style="margin-left: 500px;">
-           <a href="https://www.sameskydevices.com/blog/push-button-switches-101" target="_blank"><img src="https://www.efcomponentes.com.ar/2229-large_default/pulsador-normal-cerrado-redondo-rojo-sin-retencion-10mm-diametro.jpg" alt="Pulsador" width="400" height="300"></a>
-        </div>
+    <a href="#uno">Arduino Uno</a>
+    <a href="#mega">Arduino Mega</a>
+    <a href="#nano">Arduino Nano</a>
+    <a href="#esp32">ESP32</a>
+    <a href="#led">LED</a>
+    <a href="#pulsador">Pulsador</a>
+    <a href="#potenciometro">Potenciómetro</a>
+    <a href="#humedad">Humedad</a>
+    <a href="#dfplayer">DFPlayer</a>
+    <a href="#impresora">Impresora</a>
 
-         <h3 class="componente"><a href="https://programarfacil.com/blog/arduino-blog/el-potenciometro-y-arduino/" ><button>Potenciometro</button></a></h3>
-           <p>Es un componente electrónico que funciona como una resistencia variable. Consta de tres terminales; al mover manualmente un contacto central (cursor), divide el voltaje de salida. Esto permite controlar de forma precisa parámetros como la corriente, el volumen en equipos de audio, la luz o la posición mecánica. </p>
-           <div style="margin-left: 500px;">
-           <a href="https://sdindustrial.com.mx/blog/potenciometro-que-es/" target="_blank"><img src="https://www.tecneu.com/cdn/shop/files/potenciometro-500-1k-2k-5k-10k-20k-50k-100k-250k-500k-1m-836336.jpg?v=1750204372&width=600" alt="Potenciometro" width="400" height="450"></a>
-        </div>
+</div>
 
-         <h3 class="componente"><a href="https://www.automatizacionparatodos.com/sensor-de-humedad-de-suelo-con-arduino/" ><button>Sensor de humedad del suelo</button></a></h3>
-           <p>Es un instrumento que mide el contenido de agua en la tierra. Convierte esta variable física en una señal eléctrica para optimizar el riego, mejorar el uso del agua y asegurar condiciones óptimas para el crecimiento de las plantas. </p>
-           <div style="margin-left: 500px;">
-           <a href="https://www.sameskydevices.com/blog/push-button-switches-101" target="_blank"><img src="https://www.tecneu.com/cdn/shop/files/sensor-de-humedad-de-tierra-suelo-406593.jpg?v=1750204516&width=600" alt="Sensor de humedad del suelo" width="400" height="400"></a>
-        </div>
+<h1>Módulos de programación de Arduino</h1>
 
-         <h3 class="componente"><a href="https://programarfacil.com/blog/utilizar-pulsadores-en-arduino/" ><button>Dflayer mini</button></a></h3>
-           <p>Es un módulo de reproducción de audio MP3 muy compacto y económico. Integra un decodificador y un amplificador de 3W, lo que permite conectar un altavoz directamente. Funciona con tarjetas MicroSD (sistemas FAT16/FAT32) y es ideal para añadir sonidos, música o mensajes a proyectos DIY. </p>
-           <div style="margin-left: 500px;">
-           <a href="https://www.tecneu.com/blogs/tutoriales-de-electronica/como-utilizar-el-dfplayer-mini-con-arduino-para-proyectos-de-audio?srsltid=AfmBOoqjCLZwe_jbfqhplBtHiPxe9HXzd0Hm89LVwgurVVOhF8RG23-W" target="_blank"><img src="https://http2.mlstatic.com/D_Q_NP_777853-MLU74514468933_022024-O.webp" alt="Dflayer mini" width="400" height="400"></a>
-        </div>
-
-         <h3 class="componente"><a href="https://programarfacil.com/blog/utilizar-pulsadores-en-arduino/" ><button>Impresora termica</button></a></h3>
-           <p>Es un dispositivo que imprime texto, gráficos o códigos de barras aplicando calor sobre papel termosensible, sin necesidad de tinta o tóner. Se conecta fácilmente mediante comunicación serie TTL/UART y es ideal para proyectos de IoT, como estaciones meteorológicas o cajas registradoras.</p>
-           <div style="margin-left: 500px;">
-           <a href="https://www.sameskydevices.com/blog/push-button-switches-101" target="_blank"><img src="https://preview.redd.it/help-with-arduino-thermal-printer-v0-t2lhtjgn640f1.jpeg?width=640&crop=smart&auto=webp&s=28178ddd8b0e4b2b5735eaf8cf151a4829e8bb91" alt="Impresora termica" width="400" height="450"></a>
-        </div>
-
-        <div class="tira-container">
+<div class="tira-container">
     <div class="tira"></div>
 </div>
 
-    <h2 class="parte1">Proyectos Relacionados</h2>
-    <div style="margin-left: 60px;">
-    <p>Descubrí cómo combinar estos módulos y componentes para construir sistemas inteligentes y robots avanzados:</p>
-    </div>
-<div style="margin-left: 150px;">
-   <p>Descubrí cómo combinar estos módulos y componentes para construir sistemas inteligentes y robots avanzados:</p>
-    <div class="contenedor-proyectos">
-    <div class="tarjeta-proyecto">
-        <h3>🤖 Robótica y Automatización</h3>
-        <p>Explorá el diseño de robots complejos con múltiples servos y sistemas de control ambiental autónomos.</p>
-        <a href="proyectos_robotica.html" class="btn-proyecto">Ver Proyectos</a>
-    </div>
+<!-- ARDUINO UNO -->
 
-    <div class="tarjeta-proyecto">
-        <h3>🌐 IoT y Conectividad</h3>
-        <p>Aprendé a conectar tus microcontroladores a bases de datos en tiempo real y controlar todo desde aplicaciones móviles.</p>
-        <a href="proyecto_iot.html" class="btn-proyecto">Ver Conectividad</a>
-    </div>
+<div class="tarjeta" id="uno">
+
+<h3 class="componente">
+<a href="https://arduino.cl/aprende/ejemplos/?srsltid=AfmBOooqWKHM2rRdkY6EFKyG5Gpfi560ehaZ2q9n7Ah7mVnkATyFv6E5" target="_blank">
+<button>Arduino Uno</button>
+</a>
+</h3>
+
+<p>
+Arduino Uno es una placa electrónica de hardware abierto basada en un microcontrolador (ATmega328P), utilizada para crear proyectos de electrónica, robótica y automatización.
+</p>
+
+<a href="https://programarfacil.com/blog/arduino-blog/arduino-uno-r3/" target="_blank">
+
+<div class="contenedor">
+
+<img class="imagen"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE0UgAcbhj1GS7oh7iuUxUYNMfenpilZ6Vcg&s">
+
+<div class="arduino">Arduino Uno</div>
+
 </div>
+
+</a>
+
 </div>
+
+<!-- ARDUINO MEGA -->
+
+<div class="tarjeta" id="mega">
+
+<h3 class="componente">
+<a href="https://dfists.ua.es/~jpomares/arduino/page_14.htm" target="_blank">
+<button>Arduino Mega</button>
+</a>
+</h3>
+
+<p>
+El Arduino Mega 2560 es una placa de desarrollo basada en el microcontrolador ATmega2560.
+</p>
+
+<a href="https://programarfacil.com/blog/arduino-blog/arduino-mega-2560/" target="_blank">
+
+<div class="contenedor">
+
+<img class="imagen"
+src="https://tecmikro.com/img/cms/mega-2560-r3-para-arduino-01_1.jpg">
+
+<div class="arduino">Arduino Mega</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- ARDUINO NANO -->
+
+<div class="tarjeta" id="nano">
+
+<h3 class="componente">
+<a href="https://es.newbiely.com/tutorials/arduino-nano/arduino-nano-code-structure" target="_blank">
+<button>Arduino Nano</button>
+</a>
+</h3>
+
+<p>
+Es una placa de desarrollo pequeña y económica basada en el microcontrolador ATmega328P.
+</p>
+
+<a href="https://programarfacil.com/blog/arduino-blog/familia-arduino-nano/" target="_blank">
+
+<div class="contenedor">
+
+<img class="imagen"
+src="https://components101.com/sites/default/files/components/Arduino-Nano.jpg">
+
+<div class="arduino">Arduino Nano</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- ESP32 -->
+
+<div class="tarjeta" id="esp32">
+
+<h3 class="componente">
+<a href="https://github.com/espressif/arduino-esp32/tree/master/libraries" target="_blank">
+<button>ESP32</button>
+</a>
+</h3>
+
+<p>
+El ESP32 es una familia de microcontroladores de bajo coste y consumo, con Wi-Fi y Bluetooth integrados.
+</p>
+
+<a href="https://programarfacil.com/domotica/esp32-comparativa/" target="_blank">
+
+<div class="contenedor">
+
+<img class="imagen"
+src="https://programarfacil.com/wp-content/uploads/2022/03/esp32-web-foto_esp.jpg">
+
+<div class="arduino">ESP32</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- LED -->
+
+<div class="tarjeta" id="led">
+
+<h3 class="componente">
+<a href="https://dfists.ua.es/~jpomares/arduino/page_14.htm" target="_blank">
+<button>LED</button>
+</a>
+</h3>
+
+<p>
+Componente semiconductor que transforma la corriente eléctrica en luz.
+</p>
+
+<a href="https://visualled.com/glosario/que-es-un-led/" target="_blank">
+
+<div class="contenedor">
+
+<img class="imagen"
+src="https://i0.wp.com/www.teslaelectronic.com.pe/wp-content/uploads/2018/12/Led.Blanco.jpg?fit=600%2C600&ssl=1">
+
+<div class="arduino">LED</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- PULSADOR -->
+
+<div class="tarjeta" id="pulsador">
+
+<h3 class="componente">
+<a href="https://programarfacil.com/blog/utilizar-pulsadores-en-arduino/" target="_blank">
+<button>Pulsador</button>
+</a>
+</h3>
+
+<p>
+Es un interruptor electromecánico que permite o interrumpe el paso de corriente eléctrica.
+</p>
+
+<a href="https://www.sameskydevices.com/blog/push-button-switches-101" target="_blank">
+
+<div class="contenedor">
+
+<img class="imagen"
+src="https://www.efcomponentes.com.ar/2229-large_default/pulsador-normal-cerrado-redondo-rojo-sin-retencion-10mm-diametro.jpg">
+
+<div class="arduino">Pulsador</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- POTENCIOMETRO -->
+
+<div class="tarjeta" id="potenciometro">
+
+<h3 class="componente">
+<a href="https://programarfacil.com/blog/arduino-blog/el-potenciometro-y-arduino/" target="_blank">
+<button>Potenciómetro</button>
+</a>
+</h3>
+
+<p>
+Es un componente electrónico que funciona como una resistencia variable.
+</p>
+
+<a href="https://sdindustrial.com.mx/blog/potenciometro-que-es/" target="_blank">
+
+<div class="contenedor">
+
+<img class="imagen"
+src="https://www.tecneu.com/cdn/shop/files/potenciometro-500-1k-2k-5k-10k-20k-50k-100k-250k-500k-1m-836336.jpg?v=1750204372&width=600">
+
+<div class="arduino">Potenciómetro</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- SENSOR HUMEDAD -->
+
+<div class="tarjeta" id="humedad">
+
+<h3 class="componente">
+<a href="https://www.automatizacionparatodos.com/sensor-de-humedad-de-suelo-con-arduino/" target="_blank">
+<button>Sensor Humedad</button>
+</a>
+</h3>
+
+<p>
+Es un instrumento que mide el contenido de agua en la tierra.
+</p>
+
+<a href="https://www.automatizacionparatodos.com/sensor-de-humedad-de-suelo-con-arduino/" target="_blank">
+
+<div class="contenedor">
+
+<img class="imagen"
+src="https://www.tecneu.com/cdn/shop/files/sensor-de-humedad-de-tierra-suelo-406593.jpg?v=1750204516&width=600">
+
+<div class="arduino">Sensor Humedad</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- DFPLAYER -->
+
+<div class="tarjeta" id="dfplayer">
+
+<h3 class="componente">
+<a href="https://programarfacil.com/blog/utilizar-pulsadores-en-arduino/" target="_blank">
+<button>DFPlayer Mini</button>
+</a>
+</h3>
+
+<p>
+Es un módulo de reproducción de audio MP3 muy compacto y económico.
+</p>
+
+<a href="https://www.tecneu.com/blogs/tutoriales-de-electronica/como-utilizar-el-dfplayer-mini-con-arduino-para-proyectos-de-audio?srsltid=AfmBOoqjCLZwe_jbfqhplBtHiPxe9HXzd0Hm89LVwgurVVOhF8RG23-W" target="_blank">
+
+<div class="contenedor">
+
+<img class="imagen"
+src="https://http2.mlstatic.com/D_Q_NP_777853-MLU74514468933_022024-O.webp">
+
+<div class="arduino">DFPlayer Mini</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- IMPRESORA -->
+
+<div class="tarjeta" id="impresora">
+
+<h3 class="componente">
+<a href="https://programarfacil.com/blog/utilizar-pulsadores-en-arduino/" target="_blank">
+<button>Impresora Térmica</button>
+</a>
+</h3>
+
+<p>
+Dispositivo que imprime texto aplicando calor sobre papel termosensible.
+</p>
+
+<a href="https://www.sameskydevices.com/blog/push-button-switches-101" target="_blank">
+
+<div class="contenedor">
+
+<img class="imagen"
+src="https://preview.redd.it/help-with-arduino-thermal-printer-v0-t2lhtjgn640f1.jpeg?width=640&crop=smart&auto=webp&s=28178ddd8b0e4b2b5735eaf8cf151a4829e8bb91">
+
+<div class="arduino">Impresora Térmica</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!-- PROYECTOS -->
+
+<h2 class="parte1">Proyectos Relacionados</h2>
+
+<div style="margin-left:60px;">
+
+<p>
+Descubrí cómo combinar estos módulos y componentes para construir
+sistemas inteligentes y robots avanzados.
+</p>
+
+</div>
+
+<div style="margin-left:150px;">
+
+<div class="contenedor-proyectos">
+
+<div class="tarjeta-proyecto">
+
+<h3>🤖 Robótica y Automatización</h3>
+
+<p>
+Explorá el diseño de robots complejos con múltiples servos
+y sistemas de control ambiental autónomos.
+</p>
+
+<a href="proyectos_robotica.html"
+class="btn-proyecto">
+Ver Proyectos
+</a>
+
+</div>
+
+<div class="tarjeta-proyecto">
+
+<h3>🌐 IoT y Conectividad</h3>
+
+<p>
+Aprendé a conectar tus microcontroladores a bases de datos
+en tiempo real y controlar todo desde aplicaciones móviles.
+</p>
+
+<a href="proyecto_iot.html"
+class="btn-proyecto">
+Ver Conectividad
+</a>
+
+</div>
+
+<div class="tarjeta-proyecto">
+
+<h3>🧠Quiz</h3>
+
+<p>
+Aplica los conocimientos absorvidos
+</p>
+
+<a href="quiz.html"
+class="btn-proyecto">
+Quiz
+</a>
+<p></p>
+
+</div>
+
+</div>
+
+</div>
+
+ <script src="script.js"></script>
+
 </body>
 </html>
